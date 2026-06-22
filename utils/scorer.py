@@ -16,3 +16,14 @@ def calculate_skill_score(detected_skills):
 
     else:
         return 40
+    
+def has_projects(text):
+    return "projects" in text.lower()
+
+
+def has_github(text):
+    return "github" in text.lower()
+
+
+def has_linkedin(text):
+    return "linkedin" in text.lower()
