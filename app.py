@@ -6,8 +6,10 @@ from utils.scorer import (
     calculate_skill_score,
     has_projects,
     has_github,
-    has_linkedin
+    has_linkedin,
+    calculate_resume_score
 )
+    
 
 st.title("Resume Analyzer")
 
@@ -25,6 +27,12 @@ if uploaded_file is not None:
     projects_found = has_projects(text)
     github_found = has_github(text)
     linkedin_found = has_linkedin(text)
+    resume_score = calculate_resume_score(
+        skill_score,
+        projects_found,
+        github_found,
+        linkedin_found
+)
 
     st.subheader("Extracted Resume Text")
     st.text_area(
@@ -34,6 +42,7 @@ if uploaded_file is not None:
     )
     st.subheader("Resume Score")
     st.write(f"🏆 Skill Score: {skill_score}/40")
+    st.write(f"🎯 Resume Quality Score: {resume_score}/100")
     st.write("Projects Found:", projects_found)
     st.write("GitHub Found:", github_found)
     st.write("LinkedIn Found:", linkedin_found)
