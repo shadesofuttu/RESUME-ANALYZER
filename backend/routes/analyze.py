@@ -1,5 +1,5 @@
 
-from fastapi import APIRouter, UploadFile, File
+from fastapi import APIRouter, UploadFile, File, Form
 from services.analyze_service import analyze_resume
 import shutil
 import os
@@ -10,7 +10,8 @@ router = APIRouter()
 @router.post("/analyze")
 async def analyze(
     resume: UploadFile = File(...),
-    job_description: str = ""
+    job_description: str = Form("")
+
 ):
 
     upload_path = f"uploads/{resume.filename}"
