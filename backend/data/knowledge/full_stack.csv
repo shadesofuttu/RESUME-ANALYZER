@@ -1,0 +1,52 @@
+skill,weight,importance,category
+JavaScript,10,Core,Programming
+TypeScript,9,Core,Programming
+React,10,Core,Frontend
+Next.js,9,Advanced,Frontend
+HTML,9,Core,Frontend
+CSS,9,Core,Frontend
+Tailwind CSS,8,Core,Frontend
+Bootstrap,7,Supporting,Frontend
+Redux,8,Advanced,Frontend
+Context API,8,Core,Frontend
+Responsive Design,8,Core,Frontend
+Node.js,10,Core,Backend
+Express.js,10,Core,Backend
+REST API,10,Core,Backend
+JWT Authentication,9,Core,Backend
+Authentication,9,Core,Backend
+Authorization,9,Core,Backend
+MVC Architecture,8,Advanced,Backend
+Middleware,8,Core,Backend
+MongoDB,10,Core,Database
+Mongoose,8,Core,Database
+MySQL,7,Supporting,Database
+PostgreSQL,8,Advanced,Database
+Firebase,7,Supporting,Database
+SQL,8,Core,Database
+Git,9,Core,Tools
+GitHub,9,Core,Tools
+GitHub Actions,7,Advanced,Tools
+Docker,8,Advanced,Deployment
+AWS,8,Advanced,Cloud
+Render,6,Supporting,Deployment
+Vercel,7,Supporting,Deployment
+Netlify,7,Supporting,Deployment
+Railway,6,Supporting,Deployment
+Jest,7,Advanced,Testing
+Cypress,7,Advanced,Testing
+Postman,8,Core,Testing
+HTTPS,7,Supporting,Security
+OAuth,8,Advanced,Security
+bcrypt,8,Core,Security
+CORS,7,Core,Security
+Helmet.js,6,Advanced,Security
+Axios,8,Core,API
+Fetch API,7,Core,API
+WebSocket,7,Advanced,API
+GraphQL,7,Advanced,API
+VS Code,5,Supporting,Tools
+npm,8,Core,Tools
+Yarn,6,Supporting,Tools
+ESLint,6,Supporting,Tools
+Prettier,5,Supporting,Tools

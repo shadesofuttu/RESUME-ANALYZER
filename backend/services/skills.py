@@ -1,10 +1,16 @@
-import pandas as pd
+from .knowledge_loader import load_knowledge
 
 
 def extract_skills(text):
-    skills_df = pd.read_csv("data/skills.csv")
+    """
+    Extract matching skills from the selected knowledge base.
+    """
 
-    skills_list = skills_df["skill"].tolist()
+    # Load the Full Stack knowledge base
+    knowledge = load_knowledge("full_stack")
+
+    # Build a list of skills from the CSV
+    skills_list = [row["skill"] for row in knowledge]
 
     detected_skills = []
 
