@@ -69,26 +69,36 @@ export function mapApiToDashboard(data) {
       })),
 
     breakdown: [
-      {
-        label: "Resume Score",
-        value: data.resume_score,
-        icon: Award,
-      },
-      {
-        label: "ATS Score",
-        value: data.ats_score,
-        icon: Gauge,
-      },
-      {
-        label: "Semantic Score",
-        value: data.semantic_score,
-        icon: Brain,
-      },
-      {
-        label: "Similarity Score",
-        value: data.similarity_score,
-        icon: FileSearch,
-      },
-    ],
+  {
+    label: "Skill Score",
+    value: data.skill_score,
+    max: 30,
+  },
+  {
+    label: "Project Score",
+    value: data.project_score,
+    max: 20,
+  },
+  {
+    label: "Experience",
+    value: data.experience_score,
+    max: 15,
+  },
+  {
+    label: "Job Match",
+    value: data.job_match_score,
+    max: 20,
+  },
+  {
+    label: "GitHub",
+    value: data.github_score,
+    max: 5,
+  },
+  {
+    label: "LinkedIn",
+    value: data.linkedin_score,
+    max: 5,
+  },
+],
   }
 }
