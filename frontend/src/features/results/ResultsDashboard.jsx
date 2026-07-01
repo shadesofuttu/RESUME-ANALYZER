@@ -104,7 +104,7 @@ export function ResultsDashboard({ data }) {
           <div className="mt-5 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
             {dashboardData.recommendations.map((recommendation, index) => (
               <RecommendationCard
-                key={recommendation.title}
+                key={index}
                 recommendation={recommendation}
                 index={index}
               />
